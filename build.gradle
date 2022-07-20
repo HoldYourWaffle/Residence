@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    google()
+
+    maven {
+        name 'spigotmc-repo'
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+
+    maven {
+        name 'placeholderapi'
+        url 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+
+    maven {
+        name 'jitpack.io'
+        url 'https://jitpack.io'
+    }
+
+    maven {
+        name 'sk89q'
+        url 'https://maven.enginehub.org/repo/'
+    }
+
+    maven {
+        name 'dynmap-repo'
+        url 'https://repo.mikeprimm.com/'
+    }
+
+    maven {
+        // For outdated bstats-bukkit
+        name 'Codemc Public'
+        url 'https://repo.codemc.io/repository/maven-public/'
+    }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
+    implementation 'me.clip:placeholderapi:2.10.6'
+    implementation 'com.github.MilkBowl:VaultAPI:1.7'
+    implementation 'com.sk89q.worldedit:worldedit-bukkit:7.1.0'
+    implementation 'com.sk89q.worldguard:worldguard-bukkit:7.0.2'
+    implementation 'us.dynmap:dynmap-api:3.0-SNAPSHOT'
+
+    implementation 'commons-io:commons-io:2.6'
+}
